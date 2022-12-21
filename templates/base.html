@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-7 offset-3">
+        <h3 class="text-center">{% if check.type == 'client' %} Чек для клієнта {% else %} Чек для кухні {% endif %}</h3>
+        <table class="table table-success table-striped">
+          <thead>
+            <tr>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Номер замовлення:</th>
+              <td>{{ check.order_number }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Інформація про замовлення:</th>
+              <td colspan="2">{{ check.order }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

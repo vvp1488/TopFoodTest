@@ -1,0 +1,37 @@
+version: '3.7'
+
+
+services:
+
+  db:
+    image: postgres:12.0-alpine
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=hello_django
+      - POSTGRES_PASSWORD=hello_django
+      - POSTGRES_DB=hello_django_dev
+    ports:
+      - "54321:5432"
+
+
+
+  redis:
+    image: 'redis:alpine'
+    volumes:
+      - redis_data:/data
+
+
+  wkhtmltopdf:
+    image: ciricihq/wkhtmltopdf-aas:latest
+    volumes:
+      - .:/data
+    ports:
+      - "0.0.0.0:5555:80"
+
+
+
+volumes:
+  postgres_data:
+  redis_data:

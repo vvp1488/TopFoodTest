@@ -1,0 +1,62 @@
+[
+{
+    "model": "main.printer",
+    "pk": 10,
+    "fields": {
+        "name": "Printer 1",
+        "api_key": "uz6QkcER.PpCJGB0TNiVA2iO49YLY8PkoiSpIDcAR",
+        "check_type": "kitchen",
+        "point_id": 1
+    }
+},
+{
+    "model": "main.printer",
+    "pk": 11,
+    "fields": {
+        "name": "Printer 2",
+        "api_key": "gKpPW0z5.Se0uQRnAWqR5llcAhM02xMTrrG0K3S72",
+        "check_type": "client",
+        "point_id": 1
+    }
+},
+{
+    "model": "main.printer",
+    "pk": 12,
+    "fields": {
+        "name": "Printer 3",
+        "api_key": "UbZ4g8sn.ccJXzvuwAJuJFXght4uD2yIay23VAJ77",
+        "check_type": "kitchen",
+        "point_id": 2
+    }
+},
+{
+    "model": "main.printer",
+    "pk": 13,
+    "fields": {
+        "name": "Printer 4",
+        "api_key": "l1gO1zUc.BSghYaWUhdB3PpAZQq6nJCJXkgvdZJm8",
+        "check_type": "client",
+        "point_id": 2
+    }
+},
+{
+    "model": "main.printer",
+    "pk": 14,
+    "fields": {
+        "name": "Printer 5",
+        "api_key": "w0JwWaOD.3MTtJv882fsh9kKO9hL7cRrwYiAN1qOA",
+        "check_type": "kitchen",
+        "point_id": 3
+    }
+},
+{
+    "model": "main.printer",
+    "pk": 15,
+    "fields": {
+        "name": "Printer 6",
+        "api_key": "cl3x3Kvw.HakSsTbWz8swDzNjKAVl23DGF97jtZDC",
+        "check_type": "client",
+        "point_id": 3
+    }
+}
+]
