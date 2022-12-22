@@ -30,4 +30,5 @@ urlpatterns = [
     path('printer-list/<int:pk>/<int:pk2>/', GeneratePdf.as_view()),
     path('neworder/', generateOrder),
     path('check/<int:pk>/', htmltemplate),
+    path('download/<int:pk/'),
 ]
