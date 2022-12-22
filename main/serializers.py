@@ -6,7 +6,7 @@ from .validators import point_id_validator, order_number_validator
 class PrinterListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Printer
-        fields = ('pk', 'name', 'api_key', 'check_type', 'point_id')
+        fields = ('pk', 'name', 'api_key', 'check_type', 'point_id', 'checks')
 
 
 class TestSerializer(serializers.ModelSerializer):

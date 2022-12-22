@@ -12,6 +12,8 @@ __pycache__
 venv
 *.log
 
+templates/
+!templates/base.html
 
 media/*
 !*media

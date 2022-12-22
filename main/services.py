@@ -29,14 +29,11 @@ def generatePdfFromHtml(pk2):
         'content': open(file_path_html, 'rb'),
     }
     response = requests.post('http://0.0.0.0:5555/pdf', files=files)
-    file_path_pdf = f'media/pdf/{datetime.date.today()}/{check.order_number}_{check.type}.pdf'
+    file_path_pdf = f'media/pdf/{check.order_number}_{check.type}.pdf'
     os.makedirs(os.path.dirname(file_path_pdf), exist_ok=True)
 
     with open(file_path_pdf, 'wb') as f:
         f.write(response.content)
 
-    check.status = 'printed'
-    check.pdf_file = file_path_pdf
-    check.save()
 
 
