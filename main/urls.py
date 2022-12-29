@@ -31,3 +31,4 @@ urlpatterns = [
     path('neworder/', generateOrder),
     path('check/<int:pk>/', htmltemplate),
 ]
+

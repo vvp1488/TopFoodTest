@@ -14,7 +14,7 @@ from rest_framework_api_key.permissions import HasAPIKey
 
 class PrinterListApiView(generics.ListAPIView):
     """GET запрос для відображення всіх принтерів"""
-    queryset = Printer.objects.all().order_by('-id')
+    queryset = Printer.objects.prefetch_related('checks').order_by('-id')
     serializer_class = PrinterListSerializer
     pagination_class = SmallPagesPaginator
 

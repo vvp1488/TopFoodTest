@@ -23,6 +23,7 @@ urlpatterns = [
     path('', include('main.urls'))
 ]
 
+urlpatterns += [path('silk/', include('silk.urls', namespace='silk'))]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
